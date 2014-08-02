@@ -36,6 +36,14 @@ connect(Postgres, "localhost", "username", "password", "dbname", 5432) do conn
 end
 ```
 
+### Mappings from PostgreSQL types into Julia types
+
+     PostgreSQL       | Julia
+--------------------- | ------
+NULL                  | None
+varchar, text, bpchar | String
+bytea                 | Array{Uint8}
+
 
 ## Requirements
 
